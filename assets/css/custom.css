@@ -1,0 +1,20 @@
+.container {
+  max-width: 960px !important;}
+
+.bg-head-image{
+    background: no-repeat 0 0 url("../img/header-bg.jpg");
+    padding-bottom: 650px !important;
+  }
+
+  .no-pad {padding: 0px !important;}
+
+.text-orange{ color: #ff9400;}
+
+.btn-blue{ background-color: #1E88E5 !important;}
+
+.bg-pink{ background-color:#e01c52;}
+
+.font-size-22{ font-size: 22px; line-height: 28px;}
+.bg-grey{ background-color: #fcfcfc;}
+
+.bg-grey-dark{ background-color:#374659;}
