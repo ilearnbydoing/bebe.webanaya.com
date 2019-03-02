@@ -225,7 +225,7 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "form-process.php",
-        data: "name=" + name + "&phone=" + phone + "&email=" + email + "&company=" + company + "&city" + city,
+        data: "name=" + name + "&phone=" + phone + "&email=" + email + "&company=" + company + "&city=" + city,
         success : function(text){
             if (text == "success"){
                 formSuccess();
