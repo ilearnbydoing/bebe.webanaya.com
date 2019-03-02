@@ -89,25 +89,25 @@ HEADER
 			<div class="col-md-3 text-center mb-3">
 				<img src="assets/img/product1.jpg" alt="Handi" class="">
 				<div>
-				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Get A Sample</button></a>
+				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Know More</button></a>
 			</div>
 			</div>
 			<div class="col-md-3 text-center mb-3">
 				<img src="assets/img/product2.jpg" alt="Handi" class="">
 				<div>
-				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Get A Sample</button></a>
+				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Know More</button></a>
 			</div>
 			</div>
 			<div class="col-md-3 text-center mb-3">
 				<img src="assets/img/product3.jpg" alt="Handi" class="">
 				<div>
-					<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Get A Sample</button></a>
+					<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Know More</button></a>
 				</div>
 			</div>
 			<div class="col-md-3 text-center mb-3">
 				<img src="assets/img/product4.jpg" alt="Handi" class="">
 				<div>
-				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Get A Sample</button></a>
+				<a href="#enquiry"><button type="button" class="mt-2 mb-2 btn btn-small btn-success">Know More</button></a>
 			</div>
 			</div>
 
@@ -127,10 +127,7 @@ HEADER
 								<h3 class="mb-4 text-center text-white"><span class="text-orange">Connect With Us</span>
 									<br/>For More Details</h3>
 											  <div class="form-group">
-						              <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" required="">
-						            </div>
-											  <div class="form-group">
-						              <input type="text" name="firstname" id="lastname" class="form-control" placeholder="Last Name" required="">
+						              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
 						            </div>
 						            <div class="form-group">
 						              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail" required="">
@@ -148,7 +145,7 @@ HEADER
 						              <textarea class="form-control" rows="5" id="message" name="message" placeholder="Your message" required=""></textarea>
 						            </div> -->
 
-						            <button type="submit" id="form-submit" class="btn btn-danger btn-round btn-block shadow-sm text-white font-weight-bold text-uppercase">Apply for the job</button>
+						            <button type="submit" id="form-submit" class="btn btn-danger btn-round btn-block shadow-sm text-white font-weight-bold text-uppercase">Send Your Details</button>
 													<div id="msgSubmit" class="h3 text-center bg-success d-none text-white">We have received your message, we will get back to you shortly!</div>
 						          </form>
 				</div>
@@ -219,8 +216,7 @@ $("#contactForm").submit(function(event){
 
 function submitForm(){
     // Initiate Variables With Form Content
-    var fname = $("#firstname").val();
-    var lname = $("#lastname").val();
+    var name = $("#name").val();
     var email = $("#email").val();
     var phone = $("#phone").val();
     var company = $("#company").val();
@@ -229,7 +225,7 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "form-process.php",
-        data: "name=" + fname + "&lname=" + lname + "&phone=" + phone + "&email=" + email + "&company=" + company + "&city" + city,
+        data: "name=" + name + "&phone=" + phone + "&email=" + email + "&company=" + company + "&city" + city,
         success : function(text){
             if (text == "success"){
                 formSuccess();

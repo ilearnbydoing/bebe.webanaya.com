@@ -1,22 +1,17 @@
 <?php
-$fname = $_POST["firstname"];
-$lname = $_POST["lastname"];
+$name = $_POST["name"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
 $company = $_POST["company"];
 $city = $_POST["city"];
 
-$EmailTo = "durgesh@webanaya.com,info@hnhtwenty.com";
+$EmailTo = "vin.bana@bebefoods.com,durgesh@webanaya.com,info@hnhtwenty.com";
 $EmailFrom = "info@hnhtwenty.com";
 $Subject = "Chef Master - You have received New Enquiry";
 
 // prepare email body text
-$Body .= "First Name: ";
-$Body .= $fname;
-$Body .= "\n";
-
-$Body .= "Last Name: ";
-$Body .= $lname;
+$Body .= "Name: ";
+$Body .= $name;
 $Body .= "\n";
 
 $Body .= "Email: ";
