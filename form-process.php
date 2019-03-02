@@ -7,7 +7,7 @@ $city = $_POST["city"];
 
 $EmailTo = "vin.bana@bebefoods.com,durgesh@webanaya.com,info@hnhtwenty.com";
 $EmailFrom = "info@hnhtwenty.com";
-$Subject = "Chef Master - You have received New Enquiry";
+$Subject = "Bebe Foods - You have received New Enquiry";
 
 // prepare email body text
 $Body .= "Name: ";
